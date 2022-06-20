@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className={styles.footerMain}>
       <Typography className={styles.typo} variant="p">
-        footer
+        Footer
       </Typography>
     </div>
   );
