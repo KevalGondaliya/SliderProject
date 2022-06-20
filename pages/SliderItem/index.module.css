@@ -9,6 +9,7 @@
   margin: 0 5px;
   cursor: pointer;
   padding: 45px;
+  border: none;
 }
 .svgMain::-webkit-scrollbar {
   display: none;
