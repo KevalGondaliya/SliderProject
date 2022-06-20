@@ -6,18 +6,15 @@
   align-items: center;
   max-width: 400px;
   margin: 0 auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 10px 0;
 }
-@media (max-width: 425px) {
-  .sliderMain {
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
-  .sliderMain::-webkit-scrollbar {
-    display: none;
-  }
+.sliderMain::-webkit-scrollbar {
+  display: none;
 }
 
-.sliderSec button {
+.sliderSec .goBtn {
   margin-top: 35px;
   padding: 5px 50px;
   font-weight: 500;

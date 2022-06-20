@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Fragment } from "react";
 import { Typography } from "@mui/material";
 
-import logoImg from "../../assest/logo.png";
+import { images } from "../../constant/images.constant";
 
 import styles from "./index.module.css";
 
@@ -10,7 +10,13 @@ export default function Header() {
   return (
     <Fragment>
       <div className={styles.headerMain}>
-        <Image src={logoImg} className={styles.logo} alt="logo" />
+        <Image
+          src={images.logo}
+          className={styles.logo}
+          alt="logo"
+          width={200}
+          height={200}
+        />
         <Typography className={styles.typo} variant="h4">
           Next Slider
         </Typography>
