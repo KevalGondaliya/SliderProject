@@ -9,6 +9,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 10px 0;
+  margin-bottom: 25px;
 }
 @media (min-width: 1440px) {
   .sliderMain {
@@ -29,9 +30,9 @@
   background: #40a9ff;
   border-radius: 50px;
 }
-.sliderSec .goBtn:hover {
+/* .sliderSec .goBtn:hover {
   background: #40a9ff;
 }
 .sliderSec .goBtn:focus-within {
   background: #2897f1;
-}
+} */
