@@ -28,25 +28,6 @@
 .mainHeaderSec {
   height: 360px;
 }
-.svgMain {
-  width: 70px;
-  height: 70px;
-  background: #fff !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  padding: 45px;
-}
-.svgMain::-webkit-scrollbar {
-  display: none;
-}
-.svgMain img {
-  min-width: 30px !important;
-  max-width: 30px !important;
-}
 .footer {
   display: flex;
   flex: 1;
