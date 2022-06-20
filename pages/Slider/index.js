@@ -22,7 +22,7 @@ export default function Slider() {
         <SliderItem image={images.glasses1} />
         <SliderItem image={images.glasses2} />
       </div>
-      <Button variant="contained">Go</Button>
+      <Button variant="contained" style={{width: 200}}>Go</Button>
     </div>
   );
 }
