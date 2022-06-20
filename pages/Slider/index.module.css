@@ -30,5 +30,8 @@
   border-radius: 50px;
 }
 .sliderSec .goBtn:hover {
+  background: #40a9ff;
+}
+.sliderSec .goBtn:focus-within {
   background: #2897f1;
 }
