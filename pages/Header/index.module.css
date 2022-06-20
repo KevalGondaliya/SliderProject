@@ -1,0 +1,19 @@
+.headerMain {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  text-align: center;
+  height: 500px;
+}
+.logo {
+  width: 200px !important;
+  height: 200px !important;
+  min-width: 200px !important;
+  min-height: 200px !important;
+}
+.typo {
+  margin-top: -30px;
+  font-family: Helvetica;
+  font-weight: 300;
+}
