@@ -1,4 +1,6 @@
 import SliderItem from "../SliderItem/index";
+import Button from "@mui/material/Button";
+
 import { BootstrapButton } from "../../component/Button";
 import { images } from "../../constant/images.constant";
 import styles from "./index.module.css";
@@ -20,7 +22,7 @@ export default function Slider() {
         <SliderItem image={images.glasses1} />
         <SliderItem image={images.glasses2} />
       </div>
-      <BootstrapButton variant="contained">Go</BootstrapButton>
+      <Button variant="contained">Go</Button>
     </div>
   );
 }
