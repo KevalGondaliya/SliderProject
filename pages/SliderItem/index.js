@@ -1,9 +1,15 @@
 import Image from "next/image";
+import { useState } from "react";
+
 import styles from "./index.module.css";
 
-export default function SliderItem({ image }) {
+export default function SliderItem({ image, active, handleOnClick }) {
   return (
-    <button className={styles.svgMain} variant="contained">
+    <button
+      className={`${styles.svgMain} ${active ? styles.activeIndex : ""}`}
+      variant="contained"
+      onClick={handleOnClick}
+    >
       <Image
         src={image}
         alt="logo"

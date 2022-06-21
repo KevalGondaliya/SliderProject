@@ -1,28 +1,36 @@
 import SliderItem from "../SliderItem/index";
-import Button from "@mui/material/Button";
 
 import { BootstrapButton } from "../../component/Button";
-import { images } from "../../constant/images.constant";
+import { sliderItems } from "../../constant/images.constant";
 import styles from "./index.module.css";
+import { useState } from "react";
 
 export default function Slider() {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const handleActive = (index) => {
+    setActiveIndex(index);
+  };
   return (
     <div className={styles.sliderSec}>
       <div className={styles.sliderMain}>
-        <SliderItem image={images.glasses} />
-        <SliderItem image={images.glasses1} />
-        <SliderItem image={images.glasses2} />
-        <SliderItem image={images.glasses} />
-        <SliderItem image={images.glasses1} />
-        <SliderItem image={images.glasses2} />
-        <SliderItem image={images.glasses} />
-        <SliderItem image={images.glasses1} />
-        <SliderItem image={images.glasses2} />
-        <SliderItem image={images.glasses} />
-        <SliderItem image={images.glasses1} />
-        <SliderItem image={images.glasses2} />
+        {sliderItems?.map((data, index) => (
+          <div onClick={() => handleActive(index)} className={styles.itemMain}>
+            <SliderItem
+              key={index}
+              image={data.image}
+              index={index}
+              active={index === activeIndex}
+            />
+          </div>
+        ))}
       </div>
-      <Button variant="contained" style={{width: 200}}>Go</Button>
+      <BootstrapButton
+        variant="contained"
+        style={{ width: 200 }}
+        onClick={() => setActiveIndex(null)}
+      >
+        Go
+      </BootstrapButton>
     </div>
   );
 }

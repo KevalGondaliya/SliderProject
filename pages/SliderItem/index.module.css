@@ -11,8 +11,14 @@
   padding: 45px;
   border: none;
 }
-.svgMain::-webkit-scrollbar {
-  display: none;
+.svgMain:hover {
+  opacity: 0.8;
+}
+.activeIndex {
+  background: #0069d9 !important;
+}
+.Index {
+  background: #fff !important;
 }
 .svgMain img {
   min-width: 30px !important;
