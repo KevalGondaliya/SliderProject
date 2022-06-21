@@ -14,7 +14,11 @@ export default function Slider() {
     <div className={styles.sliderSec}>
       <div className={styles.sliderMain}>
         {sliderItems?.map((data, index) => (
-          <div onClick={() => handleActive(index)} className={styles.itemMain}>
+          <div
+            key={index}
+            onClick={() => handleActive(index)}
+            className={styles.itemMain}
+          >
             <SliderItem
               image={data.image}
               index={index}
