@@ -16,7 +16,6 @@ export default function Slider() {
         {sliderItems?.map((data, index) => (
           <div onClick={() => handleActive(index)} className={styles.itemMain}>
             <SliderItem
-              key={index}
               image={data.image}
               index={index}
               active={index === activeIndex}
